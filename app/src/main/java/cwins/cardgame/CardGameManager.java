@@ -84,7 +84,7 @@ public class CardGameManager {
         this.serverUrl = serverUrl;
         this.currentSession = session;
     }
-;ljhsfhgsdhgsdhf
+
     public void setMenuActivity(final MenuActivity menu_app) {
         Crashlytics.log(Log.DEBUG, TAG, "setMenuActivity");
         currentSession.setCurrentActivity("menu");
