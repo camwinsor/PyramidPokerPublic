@@ -1,0 +1,29 @@
+{
+  "game_id": 7,
+  "hole_cards": {
+    "0": "Jd",
+    "1": "4h",
+    "2": "6d",
+    "3": "Kh",
+    "4": "Qd",
+    "5": "8d",
+    "6": "2s"
+  },
+  "players": {
+    "1234joiner": {
+      "gamer_tag": "l33thaxor",
+      "player_round_state": "waiting_for_choices",
+      "player_state": "active",
+      "score": 0
+    },
+    "g5678hoster": {
+      "gamer_tag": "And0r",
+      "player_round_state": "waiting_for_choices",
+      "player_state": "active",
+      "score": 0
+    }
+  },
+  "resuming": false,
+  "round_id": 5,
+  "round_number": 0
+}

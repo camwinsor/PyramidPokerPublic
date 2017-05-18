@@ -1,0 +1,630 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/scoring_background"
+    android:id="@+id/scoring_layout"
+    tools:context="cwins.cardgame.ScoringActivity">
+
+
+    <Button
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/exit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exit"
+        android:typeface="monospace"
+        android:background="@drawable/skip_button_focused"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_margin="6dp"
+        android:paddingTop="8.5dp"
+        android:paddingBottom="8.5dp"
+        android:textColor="#ff888a"
+        />
+
+    <Button
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/skip_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Skip"
+        android:textSize="16sp"
+        android:textColor="#8dff86"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        android:background="@drawable/skip_button_focused"
+        android:layout_margin="6dp"
+        android:layout_marginRight="3dp"
+        android:paddingTop="8.5dp"
+        android:paddingBottom="8.5dp"
+        />
+
+    <TextView
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/board_indicator"
+        android:id="@+id/finished_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Finished"
+        android:textSize="16sp"
+        android:textColor="#8dff86"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        android:background="@drawable/skip_button_focused"
+        android:layout_margin="4dp"
+        android:paddingTop="8.5dp"
+        android:paddingBottom="8.5dp"
+        android:clickable="false"
+        android:alpha="0"
+        />
+
+    <!--OPPONENT SELECTIONS-->
+
+    <TextView
+        android:id="@+id/opponent_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:typeface="monospace"
+        android:textStyle="bold"
+        android:text="Opponent"
+        android:textColor="#ffffff"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentTop="true"
+        android:alpha="0"/>
+
+
+    <!--OPPONENT INDICATORS-->
+
+    <TextView
+        android:id="@+id/oppo_total_score_indicator"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:text="  "
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:typeface="monospace"
+        android:background="@drawable/score_negative_background"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="0dp"
+        android:gravity="center"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/oppo_high_card_choice"
+        android:alpha="0"
+        />
+
+    <TextView
+        android:id="@+id/oppo_omaha_value_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_toLeftOf="@+id/oppo_omaha_choice"
+        android:textSize="12sp"
+        android:typeface="monospace"
+        android:textColor="#ffffff"
+        android:background="@drawable/score_value_background"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="0dp"
+        android:gravity="center"
+        android:layout_alignTop="@+id/oppo_omaha_choice"
+        android:visibility="visible"
+        android:alpha="0"
+        />
+
+    <TextView
+        android:id="@+id/oppo_holdem_value_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:textSize="12sp"
+        android:typeface="monospace"
+        android:textColor="#ffffff"
+        android:background="@drawable/score_value_background"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="0dp"
+        android:gravity="center"
+        android:layout_toLeftOf="@+id/oppo_holdem_choice"
+        android:layout_alignTop="@+id/oppo_holdem_choice"
+        android:visibility="visible"
+        android:alpha="0"
+        />
+
+    <TextView
+        android:id="@+id/oppo_highcard_value_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:textSize="12sp"
+        android:typeface="monospace"
+        android:textColor="#ffffff"
+        android:background="@drawable/score_value_background"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="0dp"
+        android:gravity="center"
+        android:layout_toLeftOf="@+id/oppo_high_card_choice"
+        android:layout_alignTop="@+id/oppo_high_card_choice"
+        android:visibility="visible"
+        android:alpha="0"
+        />
+
+    <TextView
+        android:id="@+id/oppo_omaha_score_indicator"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:typeface="monospace"
+        android:background="@drawable/score_positive_background"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="0dp"
+        android:gravity="center"
+        android:layout_toRightOf="@+id/oppo_omaha_choice"
+        android:layout_alignTop="@+id/oppo_omaha_choice"
+        android:visibility="visible"
+        android:alpha="0"
+        />
+
+    <TextView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:id="@+id/oppo_holdem_score_indicator"
+        android:text="+2"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:typeface="monospace"
+        android:background="@drawable/score_positive_background"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="0dp"
+        android:gravity="center"
+        android:layout_toRightOf="@id/oppo_holdem_choice"
+        android:layout_alignTop="@+id/oppo_holdem_choice"
+        android:visibility="visible"
+        android:alpha="0"
+        />
+
+    <TextView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:id="@+id/oppo_highcard_score_indicator"
+        android:text="+1"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:typeface="monospace"
+        android:background="@drawable/score_positive_background"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="0dp"
+        android:gravity="center"
+        android:layout_toRightOf="@+id/oppo_high_card_choice"
+        android:layout_alignTop="@+id/oppo_high_card_choice"
+        android:visibility="visible"
+        android:alpha="0"
+        />
+
+
+
+    <!--OPPONENT SELECTIONS-->
+
+    <LinearLayout
+        android:id="@+id/oppo_omaha_choice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="45dp"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/oppo_omaha_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            />
+        <ImageView
+            android:id="@+id/oppo_omaha_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            />
+        <ImageView
+            android:id="@+id/oppo_omaha_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            />
+        <ImageView
+            android:id="@+id/oppo_omaha_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/oppo_holdem_choice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/oppo_omaha_choice"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="5dp"
+        >
+
+        <ImageView
+            android:id="@+id/oppo_holdem_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            />
+        <ImageView
+            android:id="@+id/oppo_holdem_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/oppo_high_card_choice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/oppo_holdem_choice"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"
+        android:gravity="center_horizontal"
+        >
+
+        <ImageView
+            android:id="@+id/oppo_high_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+
+
+    <!--BOARD CARDS-->
+
+    <LinearLayout
+        android:id="@+id/board_cards"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:layout_marginBottom="3dp"
+        >
+
+        <ImageView
+            android:id="@+id/board_card_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0"
+            android:src="@drawable/blue_back"
+            />
+        <ImageView
+            android:id="@+id/board_card_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0"
+            android:src="@drawable/blue_back"
+            />
+        <ImageView
+            android:id="@+id/board_card_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0"
+            android:src="@drawable/blue_back"
+            />
+        <ImageView
+            android:id="@+id/board_card_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0"
+            android:src="@drawable/blue_back"
+            />
+        <ImageView
+            android:id="@+id/board_card_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0"
+            android:src="@drawable/blue_back"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/board_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/board_cards"
+        android:layout_centerHorizontal="true"
+        android:typeface="monospace"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="Board 1"
+        android:textColor="#000000"
+        android:alpha="0"/>
+
+
+
+
+    <!--USER INDICATORS-->
+
+
+    <TextView
+        android:id="@+id/user_total_score_indicator"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:text="  "
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:typeface="monospace"
+        android:background="@drawable/score_negative_background"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="0dp"
+        android:gravity="center"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/user_high_card_choice"
+        android:alpha="0"
+        />
+
+    <TextView
+        android:id="@+id/user_highcard_score_indicator"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:typeface="monospace"
+        android:background="@drawable/score_negative_background"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="0dp"
+        android:gravity="center"
+        android:layout_toRightOf="@+id/user_high_card_choice"
+        android:layout_alignTop="@+id/user_high_card_choice"
+        android:visibility="visible"
+        android:alpha="0"
+        />
+
+    <TextView
+        android:id="@+id/user_holdem_score_indicator"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:typeface="monospace"
+        android:background="@drawable/score_negative_background"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="0dp"
+        android:gravity="center"
+        android:layout_toRightOf="@+id/user_holdem_choice"
+        android:layout_alignTop="@+id/user_holdem_choice"
+        android:visibility="visible"
+        android:alpha="0"
+        />
+
+    <TextView
+        android:id="@+id/user_omaha_score_indicator"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:typeface="monospace"
+        android:background="@drawable/score_negative_background"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="18dp"
+        android:gravity="center"
+        android:layout_toRightOf="@+id/user_omaha_choice"
+        android:layout_alignTop="@+id/user_omaha_choice"
+        android:visibility="visible"
+        android:alpha="0"
+        />
+
+    <TextView
+        android:id="@+id/user_highcard_value_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:textSize="12sp"
+        android:typeface="monospace"
+        android:textColor="#ffffff"
+        android:background="@drawable/score_value_background"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="0dp"
+        android:gravity="center"
+        android:layout_toLeftOf="@+id/user_high_card_choice"
+        android:layout_alignTop="@+id/user_high_card_choice"
+        android:visibility="visible"
+        android:alpha="0"
+        />
+
+    <TextView
+        android:id="@+id/user_holdem_value_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:textSize="12sp"
+        android:typeface="monospace"
+        android:textColor="#ffffff"
+        android:background="@drawable/score_value_background"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="0dp"
+        android:gravity="center"
+        android:layout_toLeftOf="@+id/user_holdem_choice"
+        android:layout_alignTop="@+id/user_holdem_choice"
+        android:visibility="visible"
+        android:alpha="0"
+        />
+
+
+    <TextView
+        android:id="@+id/user_omaha_value_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_toLeftOf="@+id/user_omaha_choice"
+        android:textSize="12sp"
+        android:typeface="monospace"
+        android:textColor="#ffffff"
+        android:background="@drawable/score_value_background"
+        android:layout_marginTop="12sp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="6dp"
+        android:gravity="center"
+        android:layout_alignTop="@+id/user_omaha_choice"
+        android:visibility="visible"
+        android:alpha="0"
+        />
+
+
+
+
+    <!--USER SELECTIONS-->
+
+    <LinearLayout
+        android:id="@+id/user_high_card_choice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/user_holdem_choice"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        >
+
+        <ImageView
+            android:id="@+id/user_high_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/user_holdem_choice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/user_omaha_choice"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="5dp"
+        >
+
+        <ImageView
+            android:id="@+id/user_holdem_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            />
+        <ImageView
+            android:id="@+id/user_holdem_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/user_omaha_choice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="45dp"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/user_omaha_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            />
+        <ImageView
+            android:id="@+id/user_omaha_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            />
+        <ImageView
+            android:id="@+id/user_omaha_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            />
+        <ImageView
+            android:id="@+id/user_omaha_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:typeface="monospace"
+        android:textStyle="bold"
+        android:text="User"
+        android:textColor="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/pause_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/pause_circle"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/board_cards"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:alpha="0"
+        android:visibility="gone"
+        />
+
+
+</RelativeLayout>

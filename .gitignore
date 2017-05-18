@@ -58,3 +58,5 @@ freeline_project_description.json
 build.gradle
 AndroidManifest.xml
 fabric.properties
+
+.DS_Store

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    android:background="@drawable/dialog_border"
+    android:orientation="vertical"
+    android:elevation="24dp">
+
+    <TextView
+        android:id="@+id/dialog_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="20dp"
+        android:typeface="sans"
+        android:textColor="@android:color/white"
+        android:textSize="18dp"
+        />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#003e80b4"
+        android:orientation="horizontal" >
+
+        <!--android:background="@drawable/small_menu_press"-->
+        <Button
+            android:id="@+id/btn_positive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:paddingRight="10dp"
+            android:background="@drawable/dialog_button"
+            android:clickable="true"
+            android:text="Yes"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:typeface="monospace"
+            android:textColor="#67d25d"
+             />
+
+        <Button
+            android:id="@+id/btn_negative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:paddingLeft="10dp"
+            android:background="@drawable/dialog_button"
+            android:clickable="true"
+            android:text="No"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:typeface="monospace"
+            android:textColor="#d25f5d"
+             />
+    </LinearLayout>
+
+</LinearLayout>

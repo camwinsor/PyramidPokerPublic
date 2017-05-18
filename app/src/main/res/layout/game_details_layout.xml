@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView android:id="@+id/round_number"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Round #"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <!--<GridView-->
+        <!--android:id="@+id/game_details_gridview"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:columnCount="2"-->
+        <!--android:layout_margin="15dp"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<TextView android:id="@+id/player_1"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:text="Player unknown" />-->
+
+        <!--<TextView android:id="@+id/player_2"-->
+            <!--android:text="Player unknown"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content" />-->
+
+
+        <!--<TextView android:id="@+id/player_3"-->
+            <!--android:text="Player unknown"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:visibility="gone"-->
+            <!--/>-->
+
+        <!--<TextView android:id="@+id/player_4"-->
+            <!--android:text="Player unknown"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:visibility="gone"-->
+            <!--/>-->
+
+        <!--<TextView android:id="@+id/player_5"-->
+            <!--android:text="Player unknown"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:visibility="gone"-->
+            <!--/>-->
+
+        <!--<TextView android:id="@+id/player_6"-->
+            <!--android:text="Player unknown"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:visibility="gone"-->
+            <!--/>-->
+
+        <!--<TextView android:id="@+id/p1_score"-->
+            <!--android:text="000"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--/>-->
+
+        <!--<TextView android:id="@+id/p2_score"-->
+            <!--android:text="000"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--/>-->
+
+        <!--<TextView android:id="@+id/p3_score"-->
+            <!--android:text="000"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:visibility="gone"-->
+            <!--/>-->
+
+        <!--<TextView android:id="@+id/p4_score"-->
+            <!--android:text="000"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:visibility="gone"-->
+            <!--/>-->
+
+        <!--<TextView android:id="@+id/p5_score"-->
+            <!--android:text="000"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:visibility="gone"-->
+            <!--/>-->
+
+        <!--<TextView android:id="@+id/p6_score"-->
+            <!--android:text="000"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:visibility="gone"-->
+            <!--/>-->
+
+    <!--</GridView>-->
+
+    <TextView android:id="@+id/date_created"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Date unknown"
+        />
+
+</LinearLayout>

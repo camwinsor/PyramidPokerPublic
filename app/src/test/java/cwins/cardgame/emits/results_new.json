@@ -1,0 +1,468 @@
+{
+  "all_boards": {
+    "board_0": [
+      "7s",
+      "6c",
+      "9d",
+      "3d",
+      "Ac"
+    ],
+    "board_1": [
+      "2h",
+      "Qs",
+      "9h",
+      "2c",
+      "2d"
+    ],
+    "board_2": [
+      "4c",
+      "Qc",
+      "8c",
+      "6h",
+      "5c"
+    ],
+    "board_3": [
+      "As",
+      "9s",
+      "4h",
+      "7d",
+      "Kc"
+    ],
+    "board_4": [
+      "Ks",
+      "3h",
+      "Js",
+      "Kh",
+      "8s"
+    ],
+    "board_5": [
+      "2s",
+      "3s",
+      "4d",
+      "Ah",
+      "6s"
+    ]
+  },
+  "all_hand_choices": {
+    "11DTP": {
+      "high_card": [
+        "Tc"
+      ],
+      "holdem": [
+        "Qh",
+        "5s"
+      ],
+      "omaha": [
+        "Jd",
+        "5h",
+        "3c",
+        "8h"
+      ]
+    },
+    "74J9P": {
+      "high_card": [
+        "7c"
+      ],
+      "holdem": [
+        "9c",
+        "Td"
+      ],
+      "omaha": [
+        "4s",
+        "Ad",
+        "7h",
+        "Jc"
+      ]
+    },
+    "g5678hoster": {
+      "high_card": [
+        "Kd"
+      ],
+      "holdem": [
+        "8d",
+        "Ts"
+      ],
+      "omaha": [
+        "Jh",
+        "Qd",
+        "6d",
+        "Th"
+      ]
+    }
+  },
+  "details": [
+    {
+      "board_id": 0,
+      "game_type": "high_card",
+      "hand_type": "High Card",
+      "opponent_hand_type": "High Card",
+      "opponent_id": "11DTP",
+      "opponent_score": -1,
+      "score": 1,
+      "winner": "g5678hoster"
+    },
+    {
+      "board_id": 0,
+      "game_type": "holdem",
+      "hand_type": "Straight",
+      "opponent_hand_type": "High Card",
+      "opponent_id": "11DTP",
+      "opponent_score": -2,
+      "score": 2,
+      "winner": "g5678hoster"
+    },
+    {
+      "board_id": 0,
+      "game_type": "omaha",
+      "hand_type": "Pair",
+      "opponent_hand_type": "Straight",
+      "opponent_id": "11DTP",
+      "opponent_score": 3,
+      "score": -3,
+      "winner": "11DTP"
+    },
+    {
+      "board_id": 1,
+      "game_type": "high_card",
+      "hand_type": "Three of a Kind",
+      "opponent_hand_type": "Three of a Kind",
+      "opponent_id": "11DTP",
+      "opponent_score": -1,
+      "score": 1,
+      "winner": "g5678hoster"
+    },
+    {
+      "board_id": 1,
+      "game_type": "holdem",
+      "hand_type": "Three of a Kind",
+      "opponent_hand_type": "Full House",
+      "opponent_id": "11DTP",
+      "opponent_score": 2,
+      "score": -2,
+      "winner": "11DTP"
+    },
+    {
+      "board_id": 1,
+      "game_type": "omaha",
+      "hand_type": "Three of a Kind",
+      "opponent_hand_type": "Three of a Kind",
+      "opponent_id": "11DTP",
+      "opponent_score": -3,
+      "score": 3,
+      "winner": "g5678hoster"
+    },
+    {
+      "board_id": 2,
+      "game_type": "high_card",
+      "hand_type": "High Card",
+      "opponent_hand_type": "Flush",
+      "opponent_id": "11DTP",
+      "opponent_score": 1,
+      "score": -1,
+      "winner": "11DTP"
+    },
+    {
+      "board_id": 2,
+      "game_type": "holdem",
+      "hand_type": "Pair",
+      "opponent_hand_type": "Two Pair",
+      "opponent_id": "11DTP",
+      "opponent_score": 2,
+      "score": -2,
+      "winner": "11DTP"
+    },
+    {
+      "board_id": 2,
+      "game_type": "omaha",
+      "hand_type": "Two Pair",
+      "opponent_hand_type": "Two Pair",
+      "opponent_id": "11DTP",
+      "opponent_score": -3,
+      "score": 3,
+      "winner": "g5678hoster"
+    },
+    {
+      "board_id": 3,
+      "game_type": "high_card",
+      "hand_type": "Pair",
+      "opponent_hand_type": "High Card",
+      "opponent_id": "11DTP",
+      "opponent_score": -1,
+      "score": 1,
+      "winner": "g5678hoster"
+    },
+    {
+      "board_id": 3,
+      "game_type": "holdem",
+      "hand_type": "High Card",
+      "opponent_hand_type": "High Card",
+      "opponent_id": "11DTP",
+      "opponent_score": 2,
+      "score": -2,
+      "winner": "11DTP"
+    },
+    {
+      "board_id": 3,
+      "game_type": "omaha",
+      "hand_type": "High Card",
+      "opponent_hand_type": "High Card",
+      "opponent_id": "11DTP",
+      "opponent_score": -3,
+      "score": 3,
+      "winner": "g5678hoster"
+    },
+    {
+      "board_id": 4,
+      "game_type": "high_card",
+      "hand_type": "Three of a Kind",
+      "opponent_hand_type": "Pair",
+      "opponent_id": "11DTP",
+      "opponent_score": -1,
+      "score": 1,
+      "winner": "g5678hoster"
+    },
+    {
+      "board_id": 4,
+      "game_type": "holdem",
+      "hand_type": "Two Pair",
+      "opponent_hand_type": "Pair",
+      "opponent_id": "11DTP",
+      "opponent_score": -2,
+      "score": 2,
+      "winner": "g5678hoster"
+    },
+    {
+      "board_id": 4,
+      "game_type": "omaha",
+      "hand_type": "Two Pair",
+      "opponent_hand_type": "Two Pair",
+      "opponent_id": "11DTP",
+      "opponent_score": -3,
+      "score": 3,
+      "winner": "g5678hoster"
+    },
+    {
+      "board_id": 5,
+      "game_type": "high_card",
+      "hand_type": "High Card",
+      "opponent_hand_type": "High Card",
+      "opponent_id": "11DTP",
+      "opponent_score": -1,
+      "score": 1,
+      "winner": "g5678hoster"
+    },
+    {
+      "board_id": 5,
+      "game_type": "holdem",
+      "hand_type": "High Card",
+      "opponent_hand_type": "Straight",
+      "opponent_id": "11DTP",
+      "opponent_score": 2,
+      "score": -2,
+      "winner": "11DTP"
+    },
+    {
+      "board_id": 5,
+      "game_type": "omaha",
+      "hand_type": "Pair",
+      "opponent_hand_type": "Straight",
+      "opponent_id": "11DTP",
+      "opponent_score": 3,
+      "score": -3,
+      "winner": "11DTP"
+    },
+    {
+      "board_id": 0,
+      "game_type": "high_card",
+      "hand_type": "High Card",
+      "opponent_hand_type": "Pair",
+      "opponent_id": "74J9P",
+      "opponent_score": 1,
+      "score": -1,
+      "winner": "74J9P"
+    },
+    {
+      "board_id": 0,
+      "game_type": "holdem",
+      "hand_type": "Straight",
+      "opponent_hand_type": "Pair",
+      "opponent_id": "74J9P",
+      "opponent_score": -2,
+      "score": 2,
+      "winner": "g5678hoster"
+    },
+    {
+      "board_id": 0,
+      "game_type": "omaha",
+      "hand_type": "Pair",
+      "opponent_hand_type": "Two Pair",
+      "opponent_id": "74J9P",
+      "opponent_score": 3,
+      "score": -3,
+      "winner": "74J9P"
+    },
+    {
+      "board_id": 1,
+      "game_type": "high_card",
+      "hand_type": "Three of a Kind",
+      "opponent_hand_type": "Three of a Kind",
+      "opponent_id": "74J9P",
+      "opponent_score": -1,
+      "score": 1,
+      "winner": "g5678hoster"
+    },
+    {
+      "board_id": 1,
+      "game_type": "holdem",
+      "hand_type": "Three of a Kind",
+      "opponent_hand_type": "Full House",
+      "opponent_id": "74J9P",
+      "opponent_score": 2,
+      "score": -2,
+      "winner": "74J9P"
+    },
+    {
+      "board_id": 1,
+      "game_type": "omaha",
+      "hand_type": "Three of a Kind",
+      "opponent_hand_type": "Three of a Kind",
+      "opponent_id": "74J9P",
+      "opponent_score": 3,
+      "score": -3,
+      "winner": "74J9P"
+    },
+    {
+      "board_id": 2,
+      "game_type": "high_card",
+      "hand_type": "High Card",
+      "opponent_hand_type": "Flush",
+      "opponent_id": "74J9P",
+      "opponent_score": 1,
+      "score": -1,
+      "winner": "74J9P"
+    },
+    {
+      "board_id": 2,
+      "game_type": "holdem",
+      "hand_type": "Pair",
+      "opponent_hand_type": "Flush",
+      "opponent_id": "74J9P",
+      "opponent_score": 2,
+      "score": -2,
+      "winner": "74J9P"
+    },
+    {
+      "board_id": 2,
+      "game_type": "omaha",
+      "hand_type": "Two Pair",
+      "opponent_hand_type": "Straight",
+      "opponent_id": "74J9P",
+      "opponent_score": 3,
+      "score": -3,
+      "winner": "74J9P"
+    },
+    {
+      "board_id": 3,
+      "game_type": "high_card",
+      "hand_type": "Pair",
+      "opponent_hand_type": "Pair",
+      "opponent_id": "74J9P",
+      "opponent_score": -1,
+      "score": 1,
+      "winner": "g5678hoster"
+    },
+    {
+      "board_id": 3,
+      "game_type": "holdem",
+      "hand_type": "High Card",
+      "opponent_hand_type": "Pair",
+      "opponent_id": "74J9P",
+      "opponent_score": 2,
+      "score": -2,
+      "winner": "74J9P"
+    },
+    {
+      "board_id": 3,
+      "game_type": "omaha",
+      "hand_type": "High Card",
+      "opponent_hand_type": "Two Pair",
+      "opponent_id": "74J9P",
+      "opponent_score": 3,
+      "score": -3,
+      "winner": "74J9P"
+    },
+    {
+      "board_id": 4,
+      "game_type": "high_card",
+      "hand_type": "Three of a Kind",
+      "opponent_hand_type": "Pair",
+      "opponent_id": "74J9P",
+      "opponent_score": -1,
+      "score": 1,
+      "winner": "g5678hoster"
+    },
+    {
+      "board_id": 4,
+      "game_type": "holdem",
+      "hand_type": "Two Pair",
+      "opponent_hand_type": "Pair",
+      "opponent_id": "74J9P",
+      "opponent_score": -2,
+      "score": 2,
+      "winner": "g5678hoster"
+    },
+    {
+      "board_id": 4,
+      "game_type": "omaha",
+      "hand_type": "Two Pair",
+      "opponent_hand_type": "Two Pair",
+      "opponent_id": "74J9P",
+      "opponent_score": 3,
+      "score": -3,
+      "winner": "74J9P"
+    },
+    {
+      "board_id": 5,
+      "game_type": "high_card",
+      "hand_type": "High Card",
+      "opponent_hand_type": "High Card",
+      "opponent_id": "74J9P",
+      "opponent_score": -1,
+      "score": 1,
+      "winner": "g5678hoster"
+    },
+    {
+      "board_id": 5,
+      "game_type": "holdem",
+      "hand_type": "High Card",
+      "opponent_hand_type": "High Card",
+      "opponent_id": "74J9P",
+      "opponent_score": 2,
+      "score": -2,
+      "winner": "74J9P"
+    },
+    {
+      "board_id": 5,
+      "game_type": "omaha",
+      "hand_type": "Pair",
+      "opponent_hand_type": "Two Pair",
+      "opponent_id": "74J9P",
+      "opponent_score": 3,
+      "score": -3,
+      "winner": "74J9P"
+    }
+  ],
+  "game_id": 20,
+  "round_id": 11,
+  "round_number": 0,
+  "round_scores": {
+    "11DTP": -10,
+    "74J9P": 24,
+    "g5678hoster": -14
+  },
+  "total_scores": {
+    "11DTP": -10,
+    "74J9P": 24,
+    "g5678hoster": -14
+  }
+}

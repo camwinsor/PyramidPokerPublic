@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:background="@drawable/game_tv_background">
+
+    <TableLayout
+        android:id="@+id/score_table_layout"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:stretchColumns="*"
+        android:padding="20dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/final_dialog_title"
+            android:textSize="25sp"
+            android:typeface="monospace"
+            android:textStyle="bold"
+            android:text="End of Round 1 Results"
+            />
+
+        <TableRow
+            android:paddingTop="10dp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:id="@+id/player_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:typeface="monospace"
+                android:textSize="15sp"
+                />
+            <TextView
+                android:id="@+id/score_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:typeface="monospace"
+                android:textSize="15sp"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:id="@+id/player_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:typeface="monospace"
+                android:textSize="15sp"/>
+            <TextView
+                android:id="@+id/score_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:typeface="monospace"
+                android:textSize="15sp"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:id="@+id/player_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:typeface="monospace"
+                android:textSize="15sp"/>
+            <TextView
+                android:id="@+id/score_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:typeface="monospace"
+                android:textSize="15sp"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:id="@+id/player_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:typeface="monospace"
+                android:textSize="15sp"/>
+            <TextView
+                android:id="@+id/score_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:typeface="monospace"
+                android:textSize="15sp"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/player_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:typeface="monospace"
+                android:textSize="15sp"/>
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/score_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:typeface="monospace"
+                android:textSize="15sp"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/player_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:typeface="monospace"
+                android:textSize="15sp"/>
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/score_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:typeface="monospace"
+                android:textSize="15sp"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+</ScrollView>

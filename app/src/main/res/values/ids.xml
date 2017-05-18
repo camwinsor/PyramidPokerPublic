@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="originalTV" type="id" />
+    <item name="resourceId" type="id" />
+    <item name="holeCardId" type="id" />
+    <item name="local_card" type="id" />
+    <item name="cardSelected" type="id"/>
+    <item name="add_game_key_1" type="id" />
+    <item name="add_game_key_2" type="id" />
+    <item name="add_game_key_3" type="id" />
+</resources>

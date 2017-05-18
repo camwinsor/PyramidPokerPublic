@@ -1,0 +1,86 @@
+<resources>
+    <string name="app_name">"Pyramid Poker"</string>
+    <string name="hc_text">High Card</string>
+    <string name="he_text">Hold em</string>
+    <string name="plo_text">Omaha</string>
+    <string name="ready">Ready</string>
+    <string name="host_game">Host Game</string>
+    <string name="settings">Settings</string>
+    <string name="cheevos">Cheevos</string>
+
+    <string name="title">"PYRAMID POKER"</string>
+    <string name="app_id">888605375850</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="signin_other_error">Failed to Sign In</string>
+    <string name="quick_game">Quick Game</string>
+    <string name="private_game">Private Game</string>
+    <string name="title_activity_waiting">WaitingActivity</string>
+
+    <string name="invite_players">Invite Players</string>
+    <string name="title_activity_games_list">GamesListActivity</string>
+    <string name="pending_invites">Pending Invites</string>
+    <string name="current_games">Current Games</string>
+    <string name="community_boards">All Community Boards<u>underline</u></string>
+
+
+    <!--Buttons-->
+    <string name="ok">OK</string>
+    <string name="wait">WAIT</string>
+    <string name="scores">SCORE</string>
+    <string name="reset">RESET</string>
+    <string name="exit">EXIT</string>
+    <string name="menu_return">RETURN TO MENU</string>
+    <string name="join_game">JOIN GAME</string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+    <string name="back_button">BACK</string>
+    <string name="skip_button">SKIP</string>
+
+
+    <!--Hand values-->
+    <string name="pair">Pair</string>
+    <string name="two_pair">Two Pair</string>
+    <string name="three_of_a_kind">Three of\na kind</string>
+    <string name="straight">Straight</string>
+    <string name="flush">Flush</string>
+    <string name="full_house">Full/nHouse</string>
+    <string name="four_of_a_kind">Four of\na kind</string>
+    <string name="straight_flush">Straight\nFlush</string>
+    <string name="royal_flush">Royal\nFlush</string>
+
+    <!--Cheevos-->
+    <string name="cheevo_1">CgkI6vqHqO4ZEAIQCA</string>
+    <string name="cheevo_2">CgkI6vqHqO4ZEAIQCQ</string>
+    <string name="cheevo_3">CgkI6vqHqO4ZEAIQCg</string>
+    <string name="cheevo_4">CgkI6vqHqO4ZEAIQCw</string>
+    <string name="cheevo_5">CgkI6vqHqO4ZEAIQDw</string>
+    <string name="cheevo_6">CgkI6vqHqO4ZEAIQEA</string>
+    <string name="cheevo_7">CgkI6vqHqO4ZEAIQEQ</string>
+
+    <!--Dialog texts-->
+    <string name="ok_test">" is testing Ok Dialog"</string>
+    <string name="new_invite">New Invite Received!</string>
+    <string name="invite_received">" has sent you a game invite"</string>
+    <string name="resumed_waiting">" has resumed a game and is waiting for you to join."</string>
+    <string name="socket_disconnect">"We're sorry, it seems your connection to the game server has
+        been severed. Attempting to reconnect"</string>
+    <string name="socket_reconnected">"Reconnected to server successfully</string>
+    <string name="game_creation_error">"Unfortunately there was an error while creating the game. "
+        + "\n\nPlease try again."</string>
+    <string name="player_connected">" has connected"</string>
+    <string name="player_suspended">" has suspended play</string>
+    <string name="player_left">" has left the game permanently. /n/nRound will be restarted</string>
+    <string name="socket_disconnect_main">"Your connection to the game server has been severed.
+        The current round will be forfeit and a new round will begin when the game is resumed by
+        all players."</string>
+    <string name="confirm_selections">Submit Choices?</string>
+    <string name="no_score">"There are no scores yet"</string>
+    <string name="select_cards">"You must make all seven selections to proceed"</string>
+
+
+
+
+
+
+</resources>
